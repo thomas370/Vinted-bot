@@ -107,8 +107,6 @@ def rechercher_annonces():
             except Exception as e:
                 print(f"Erreur lors de l'extraction des données d'un article : {e}")
 
-        # Sauvegarder dans un fichier CSV
-        save_to_csv(article_data)
 
         # Envoyer une notification via Discord avec les articles
         webhook_url = "https://discord.com/api/webhooks/1322892176564424744/IRNz4YR1Ij8kJ4VE7iOfx64HtKgMyDXLFyoVA6srOQcebGCrJ4t7udIvHeuhxqF-6cM9"  # Remplace par ton URL de webhook
@@ -123,16 +121,6 @@ def rechercher_annonces():
         driver.quit()
         print("Navigateur fermé.")
 
-
-def save_to_csv(data):
-    """
-    Sauvegarde les données des articles dans un fichier CSV.
-    """
-    with open("articles_vinted.csv", mode="w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Titre", "Lien", "Image"])  # Entêtes des colonnes
-        writer.writerows(data)
-    print("Les données ont été sauvegardées dans 'articles_vinted.csv'.")
 
 
 # Exécution du script toutes les 20 minutes
