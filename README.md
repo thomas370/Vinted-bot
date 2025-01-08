@@ -1,10 +1,15 @@
 # Bot Vinted
 
-Un bot conçu pour faciliter la recherche d'articles sur Vinted. Il permet de récupérer les 10 derniers articles correspondant à un mot-clé donné et de les envoyer directement sur un serveur Discord.
+Un bot léger conçu pour rechercher automatiquement les articles récents sur Vinted et les envoyer sur un serveur Discord via un webhook.
 Fonctionnalités principales
 
-    - 🔍 Recherche rapide sur Vinted via un mot-clé.
-    - 📦 Récupération des 10 dernières annonces pertinentes.
-    - 📤 Envoi automatique des résultats sur Discord.
+    🔍 Recherche d'articles via un mot-clé configurable directement dans le code.
+    📦 Récupération des 10 derniers articles correspondant au mot-clé.
+    📤 Envoi automatique des résultats sur Discord via un lien webhook personnalisé.
 
-Idéal pour ne rien manquer des nouvelles offres sur Vinted ! 🎯
+Configuration
+
+    Ajoutez un mot-clé : Modifiez le script pour définir le mot-clé utilisé pour la recherche.
+    Ajoutez votre webhook Discord : Insérez le lien du webhook de votre serveur Discord pour recevoir les résultats.
+
+Ce bot est idéal pour surveiller facilement des articles spécifiques sur Vinted et être alerté en temps réel ! 🎯
