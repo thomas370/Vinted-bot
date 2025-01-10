@@ -109,7 +109,7 @@ def rechercher_annonces():
 
 
         # Envoyer une notification via Discord avec les articles
-        webhook_url = "https://discord.com/api/webhooks/1322892176564424744/IRNz4YR1Ij8kJ4VE7iOfx64HtKgMyDXLFyoVA6srOQcebGCrJ4t7udIvHeuhxqF-6cM9"  # Remplace par ton URL de webhook
+        webhook_url = "###################"  # Remplace par ton URL de webhook
         title = "Nouveaux Articles Pokémon"
         envoyer_notification_discord(webhook_url, title, message)
 
